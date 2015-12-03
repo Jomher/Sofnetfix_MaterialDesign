@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Material">
+        <!--Habilitar animaciones en las transiciones -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- Más definiciones... -->
+        <!-- Estados Entrada-Salida  -->
+        <item name="android:windowEnterTransition">@transition/explode_transition</item>
+        <item name="android:windowExitTransition">@transition/explode_transition</item>
+
+        <!-- Estados Reingreso-Retorno  -->
+        <!--item name="android:windowReenterTransition">@transition/fade_transition</item-->
+        <!-- item name="android:windowReturnTransition">@transition/fade_transition</item-->
+
+    </style>
+</resources>

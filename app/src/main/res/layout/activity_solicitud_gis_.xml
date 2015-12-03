@@ -1,0 +1,88 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sofnetfix.sofnetfix.SolicitudGIS_Activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+    android:id="@+id/formServicios"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:text="@string/txtUbicacion"/>
+
+    <fragment
+    xmlns:map="http://schemas.android.com/apk/res-auto" 
+    android:layout_width="wrap_content" android:layout_height="250dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+         <TextView
+            android:id="@+id/txtCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:paddingBottom="5dp"
+             android:textSize="15sp"
+            android:text="@string/txtCategorias"/>
+    <Spinner
+        android:prompt="@string/spncategorias"
+        android:entries="@array/categorias"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/spncategoria"
+        android:textColor="#84cc34"
+        android:textSize="20sp"
+        android:background="@drawable/abc_spinner_mtrl_am_alpha"
+        android:spinnerMode="dropdown"
+        android:contentDescription="@string/txtCategorias">
+    </Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtnombreWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/descriptor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:hint="@string/txtDescripcion"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/enviarSolicitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignBottom="@id/formServicios"
+        android:layout_alignRight="@id/formServicios"
+        android:src="@drawable/ic_person_add"/>
+
+</RelativeLayout>
+
+    </ScrollView>

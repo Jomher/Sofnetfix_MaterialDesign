@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Sofnetfix</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Clave</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="nombre">Nombres</string>
+    <string name="apellido">Apellidos</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="txtCategorias">Categorias</string>
+    <string name="txtUbicacion">Ubicacion</string>
+    <string name="txtDescripcion">Descripcion</string>
+
+    <string name="spnopciones">Municipios</string>
+    <string-array name="opciones">
+        <item>San Salvador</item>
+        <item>San Marcos</item>
+        <item>Antiguo Cuscatlan</item>
+        <item>Mejicanos</item>
+        <item>Soyapango</item>
+        <item>Santa Tecla</item>
+    </string-array>
+
+    <string name="spncategorias">Municipios</string>
+    <string-array name="categorias">
+        <item>Software</item>
+        <item>Hardware</item>
+        <item>Redes</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_card_view_">CardView_Activity</string>
+    <string name="title_activity_recycle_view_">Nuestros Servicios</string>
+    <string name="title_activity_solicitud_gis_">Map</string>
+</resources>

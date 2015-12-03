@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyect_t.demo01.Activity_Sign_Up"
+    android:scrollbars="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtnombreWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/txtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nombre"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtapellidosWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/txtapellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Apellidos"/>
+</android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/genero"
+        android:orientation="vertical"
+        style="@style/RadioButton">
+
+        <RadioButton
+            android:id="@+id/masculino"
+            android:text="@string/masculino"
+            style="@style/RadioButton"/>
+
+        <RadioButton
+            android:id="@+id/femenino"
+            android:text="@string/femenino"
+            style="@style/RadioButton"/>
+    </RadioGroup>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtedadWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edad"
+        android:inputType="number"
+        android:maxLength="3"
+        android:hint="Edad" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txttelefonoWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/txttelefono"
+        android:hint="Telefono"
+        android:inputType="phone"
+        android:maxLength="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtcorreoWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/correo"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:maxLength="75"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:prompt="@string/spnopciones"
+        android:entries="@array/opciones"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#84cc34"
+        android:textSize="20sp"
+        android:background="@drawable/abc_spinner_mtrl_am_alpha"
+        android:spinnerMode="dropdown"
+        android:contentDescription="Municipios">
+    </Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtdireccionWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/direccion"
+        android:hint="Direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtclaveWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/clave"
+        android:hint="Clave"
+        android:inputType="textPassword"
+        android:maxLength="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtclave2Wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/clave2"
+        android:hint="Confirmar Clave"
+        android:inputType="textPassword"
+        android:layout_marginBottom="50dp"
+        android:maxLength="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnregistro"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registar"/>
+
+</LinearLayout>
+</ScrollView>
